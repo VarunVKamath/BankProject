@@ -90,9 +90,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-         dj_database_url.config(conn_max_age=600, ssl_require=True)
-    }
+    'default':dj_database_url.config(conn_max_age=600, ssl_require=True)
+    
 }
 
 
@@ -134,4 +133,3 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[STATIC_DIR]
- 
