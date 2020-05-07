@@ -89,16 +89,11 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#          'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'bank_db',
-#         'USER':'root',
-#         'PASSWORD': 'root123',
-#         'HOST': 'localhost',
-#         'PORT': 3306,
-#     }
-# }
+DATABASES = {
+    'default': {
+         dj_database_url.config(conn_max_age=600, ssl_require=True)
+    }
+}
 
 
 # Password validation
@@ -139,4 +134,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[STATIC_DIR]
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+ 
