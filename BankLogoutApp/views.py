@@ -4,7 +4,7 @@ from django.contrib import auth
 
 def LogoutFunction(request):
     auth.logout(request)
-    return render(request=request, template_name='html/BankHomeApp/Home_page.html')
+    return render(request=request, template_name='html/BankHomeApp/Home_Page.html')
 
 def Admin_LogoutFunction(request):
     auth.logout(request)
