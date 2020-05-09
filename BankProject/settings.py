@@ -132,3 +132,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[STATIC_DIR]
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+django_heroku.settings(locals())
