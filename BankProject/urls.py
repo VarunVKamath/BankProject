@@ -41,7 +41,7 @@ urlpatterns = [
 
     path('account/',ADViews.account_details),
 
-    path('accountinfo/',ADViews.account_details2)
+    path('accountinfo/',ADViews.account_details2),
 
     path('admin_dashboard/',ADViews.Admin_account_details),
 
