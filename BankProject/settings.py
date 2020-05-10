@@ -139,6 +139,8 @@ LOGGING = {
             'level': 'DEBUG',
             'propagate': False,
         },
+    },
+
     }
 
 # Password validation
