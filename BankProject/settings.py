@@ -42,7 +42,7 @@ STATICFILES_DIRS = (
 SECRET_KEY = '_75&*(p6_uj-0u7x7-ldh#7+5$bn0z-&@f41+b5pv*k^ocv0j('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['kamath-bank-project.herokuapp.com']
 AUTH_USER_MODEL='AccountCreationApp.CustomerInfo'
