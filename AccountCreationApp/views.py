@@ -6,6 +6,7 @@ from django.contrib.auth import get_user_model
 from .models import ApprovedAccNumbers
 #from django.core.files.storage import FileSystemStorage
 
+#Function To create new users
 def New_Acc_Page(request):
     User=get_user_model()
     if request.method=='POST':

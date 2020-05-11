@@ -2,6 +2,8 @@ from django.shortcuts import render,redirect
 from AccountCreationApp.models import CustomerInfo
 from django.contrib import messages
 # Create your views here.
+
+#Function to verify the user if he/she forgets the password
 def ForgotPass_Page(request):
     if request.method=="POST":
         AC=request.POST['AccountNumber']

@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from AccountCreationApp.models import CustomerInfo
 # Create your views here.
+
+#Function to change the security answers.
 def CSA(request):
     CSA_list=CustomerInfo.objects.all()
     my_dict={'CSA_list':CSA_list}

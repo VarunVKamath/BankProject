@@ -4,6 +4,7 @@ from django.contrib.auth.models import auth
 from AccountCreationApp.models import CustomerInfo
 from .models import BankStatement
 
+#Function to send the money and update the bank statement.
 def transfer_money(request):
 	current_user=request.user
 	current_balance=current_user.Balance

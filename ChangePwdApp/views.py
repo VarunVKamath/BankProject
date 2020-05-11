@@ -4,6 +4,8 @@ from django.contrib import messages
 from django.contrib.auth.models import auth,User
 from django.contrib.auth.hashers import make_password
 # Create your views here.
+
+#Function to change the password if the user has forgot the password.
 def Change_Password(request):
     ACN=request.session['number']
     if request.method=="POST":
@@ -24,7 +26,7 @@ def Change_Password(request):
     else:
         return render(request,template_name='html/BankLoginApp/Change_Password.html',)
 
-
+#Function to change the password if the user is logged in.
 def Change_Password2(request):
     if request.method=="POST":
         current_user=request.user

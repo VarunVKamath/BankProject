@@ -4,6 +4,7 @@ from django.contrib import messages
 from django.contrib.auth.models import auth
 # Create your views here.
 
+#Function to display Users account page
 def account_details(request):
     if request.user.is_anonymous ==0: 
         account_info=CustomerInfo.objects.all()
@@ -12,7 +13,8 @@ def account_details(request):
 
     else:
         return render(request=request, template_name='html/BankHomeApp/Home_Page.html',)
-        
+
+#Function to display the details of the user       
 def account_details2(request):
     if request.user.is_anonymous ==0: 
         account_info=CustomerInfo.objects.all()
@@ -22,6 +24,7 @@ def account_details2(request):
     else:
         return render(request=request, template_name='html/BankHomeApp/Home_Page.html',)
 
+#Function to display the admin dashboard
 def Admin_account_details(request):
     if request.user.is_anonymous ==0: 
         account_info=CustomerInfo.objects.all()

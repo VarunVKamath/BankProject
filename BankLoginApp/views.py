@@ -4,6 +4,8 @@ from django.contrib.auth.models import auth,User
 from AccountCreationApp.models import CustomerInfo
 
 # Create your views here.
+
+#Functions to Login the users and admin.
 def Login_Page(request):
     if request.method=="POST":
         username1=request.POST['username']
